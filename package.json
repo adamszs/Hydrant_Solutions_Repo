@@ -1,0 +1,30 @@
+{
+  "name": "hydrant_solutions_repo",
+  "version": "1.0.0",
+  "description": "Hydrant Solutions Website Build",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamszs/HydrantSolutions_repo.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "SCSS",
+    "NPM",
+    "JS",
+    "ES6"
+  ],
+  "author": "Zachary Adams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamszs/HydrantSolutions_repo/issues"
+  },
+  "homepage": "https://github.com/adamszs/HydrantSolutions_repo#readme",
+  "dependencies": {
+    "uglifyjs": "^2.4.11"
+  }
+}
