@@ -5,22 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- CDN for FontAwesome5 -->
-
+    <script src="https://kit.fontawesome.com/4f187fdfca.js" crossorigin="anonymous"></script>
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato:700|Roboto&display=swap" rel="stylesheet"> 
     <!-- main stylesheet-->
     <link rel="stylesheet" type="text/css" href="./scss/main.css">
-    <title>Hydrant Solutions-Contact Us</title>
+    <title>Hydrant Solutions | Contact Us</title>
 </head>
-<body>
-    <header>
+<body id="body">
+        <nav id="nav">
+            <a id="logo" href="/"><img src="./images/logo/logo.png" width="auto" height="auto" /></a>
+            <div class="mobile__only">
+                <div class="mobile__menu__toggle">
+                    <i id="mobile__menu__toggle" class="fas fa-bars fa-2x"></i>
 
-    </header>
-    <main>
-        
+                    <div id="mobile__menu__modal" class="mobile__menu">
+                            <div id="close"><span>&#10006;</span></div>
+                            <a class="mobile__nav__links" href="./The-Breakaway-Collar.html">The Breakway Collar</a>
+                            <a class="mobile__nav__links" href="./About-Us.html">About Us</a>
+                            <a class="mobile__nav__links" href="./FAQs.html">FAQs</a>
+                            <a class="mobile__nav__links selected" href="./Contact-Us.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop__only">
+            <a class="nav__links" href="./The-Breakaway-Collar.html">The Breakway Collar</a>
+            <a class="nav__links" href="./About-Us.html">About Us</a>
+            <a class="nav__links" href="./FAQs.html">FAQs</a>
+            <a class="nav__links selected" href="./Contact-Us.html">Contact Us</a>
+            </div>
+        </nav>
+     <main>
+         <section id="home__image__01" class="parallax banner__image"><h1 class="banner__text white">Contact Us</h1></section>
+         <section class="first__section">
+             <div class="inner__copy centered">
+                <h1>How To <span class="no__br">Get In Touch</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A illum eaque nemo assumenda eum atque ea repellat vel, at accusamus, earum ipsum est sequi alias provident. Quia asperiores officia temporibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A illum eaque nemo assumenda eum atque ea repellat vel, at accusamus, earum ipsum est sequi alias provident. Quia asperiores officia temporibus.</p>
+            <div class="contact__social">
+                <div class="contact__social__flex__row">
+                    <a href="mailto:breakawaycollar@hydrantsolutions.com" target="_blank" rel="noreferrer noopenner"><i class="far fa-envelope fa-2x fa-border"></i>breakawaycollar@hydrantsolutions.com</a>
+                </div>
+                <div class="contact__social__flex__row">
+                    <a href="https://www.instagram.com/hydrantsolutions/" target="_blank" rel="noreferrer noopenner"><i class="fab fa-instagram fa-2x fa-border"></i>follow us @hydrantsolutions</a>
+                </div>
+                <div class="contact__social__flex__row">
+                    <a href="tel:18186025307"><i class="fas fa-phone fa-2x fa-border"></i>818-602-5307</a>
+                </div>
+            </div>
+            </div>
+         </section>
     </main>
     <footer>
-
+        <div class="flexbox footer__flexbox">
+            <small>&copy; Copyright 2015 - <span id="year"></span>, Hydrant Solutions</small>
+            <div class="social">
+                    <a href="https://twitter.com/HydrantSolution" target="_blank" rel="noreferrer noopenner"><i class="fab fa-twitter fa-2x fa-border"></i></a>
+                    <a href="https://www.instagram.com/hydrantsolutions/" target="_blank" rel="noreferrer noopenner"><i class="fab fa-instagram fa-2x fa-border"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 <script src="./js/main.js"></script>

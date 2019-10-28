@@ -3,10 +3,121 @@
 @import 'colors';
 @import 'header';
 @import 'footer';
+@import 'banner_images';
+@import 'contact_us';
 
 
-
+.centered,
+.centered-button {
+    text-align:center;
+    margin:0 auto;
+}
+.left {
+    text-align:left;
+}
 //main styles go here..
+.body--no-scroll {
+    overflow-y:hidden;
+}
+.first__section {
+    margin-top:10rem;
+}
+.banner__text {
+    margin-bottom:0;
+    text-align:center;
+}
+section { 
+    width:100%;
+    height:auto;
+    background-color:$white;
+    .inner__copy {
+        max-width:80rem;
+        padding:0 2rem;
+    }
+}
+.button {
+    position:relative;
+    display:inline-block;
+    border:2px solid $black;
+    background-color:transparent;
+    color:$black;
+    font-weight:bold;
+    font-size:2rem;
+    padding:1.5rem 2rem;
+    border-radius:0;
+    margin:1rem auto;
+    text-align:center;
+    text-transform:captialize;
+
+    &:hover {
+        cursor:pointer;
+        background-color:$primary;
+        color:$black;
+    }
+}
+//Sponsor
+.sponsors {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    max-width:1200px;
+    margin:0 auto;
+
+    .sponsor img{
+        width:400px;
+        height:auto;
+        object-fit:contain;
+    }
+}
+
+
+//FAQ section
+.half__bottom__padding {
+    padding-bottom:6rem;
+}
+.accordion {
+    padding-top:0;
+
+    & > .accordion__section {
+        & > .faq-title {
+            margin-bottom:2rem;
+            text-align:left;
+            &:hover {
+            cursor:pointer;
+            }
+        }
+        & > .hidden {
+        display:none;
+        opacity:0;
+        }
+    }
+    & > .accordion__section.active {   
+        & > .hidden {
+            transition: opacity .25s ease-in-out;
+            -moz-transition: opacity .25s ease-in-out;
+            -webkit-transition: opacity .25s ease-in-out;
+          display:block;
+          opacity:1;
+        }
+    }
+}
+//two col flex section
+.flex__div {
+    display:flex;
+    flex-direction:row;
+    margin:12rem auto;
+    max-width:1400px;
+    justify-content: center;
+    flex-wrap: nowrap;
+    & > .text__col {
+        align-items: center;
+        width:60%;
+        max-width:65rem;
+        padding:3rem 6rem;
+    }
+}
+
 
 
 @import 'media_queries';

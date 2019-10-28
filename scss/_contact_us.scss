@@ -1,0 +1,33 @@
+.contact__social {
+    display:flex;
+    flex-direction:column;
+    justify-content:start;  
+    align-items:start;
+   
+    & > .contact__social__flex__row {
+    
+        &  > a {
+            text-decoration: none;
+            color:$black;
+            font-weight:400;
+            margin:6rem 2rem 0;
+            font-size:2rem;
+            white-space: nowrap;
+            &:hover {
+                color:$dark-gry;
+            }
+            & > i {
+                color:$black;
+                border: .2rem solid $black;
+                border-radius: 50%;
+                padding: .8rem;
+                margin:2rem 2rem 2rem 0;
+                font-size:1em;
+                &:hover {
+                    color:$dark-gry;
+                    border:.2rem solid $dark-gry;
+                }
+            }
+        }
+    }
+}

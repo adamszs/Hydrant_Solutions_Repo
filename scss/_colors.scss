@@ -1,0 +1,28 @@
+$primary: #ffff00;
+$gry: #f0eff4;
+$dark-gry:#3a3e3b;
+$black: #100007;
+$white: #FFF;
+
+
+//text-colors
+.white {
+    color:$white;
+}
+.black {
+    color:$black;
+}
+.gry {
+    color:$gry;
+}
+.dark__gry {
+    color:$dark-gry;
+}
+
+//backgrounds
+.gry__bg {
+    background-color:$gry;
+}
+.dark__gry__bg{
+    background-color:$dark-gry;
+}

@@ -1,0 +1,18 @@
+
+//parallax rules go here
+.parallax {
+        background-attachment: fixed; 
+}
+.banner__image{  
+        width:100%;
+        height:650px;
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center bottom;
+        background-image:url('../images/desktop_banners/banner_home_01.jpg');
+        display:flex;   
+        justify-content:center;
+        align-items:center;
+}
+.banner_home_01 {background-image:url('../images/desktop_banners/banner_home_02.jpg');}
+.banner__home__02 {background-image:url('../images/desktop_banners/banner_home_02.jpg');}

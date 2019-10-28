@@ -1,0 +1,38 @@
+footer {
+    display:flex;
+    justify-content:center;
+    background-color:$dark-gry;
+    color:$gry;
+    flex-direction:row;
+    padding:6rem 6rem;
+    & > .flexbox {
+    display:flex;
+    width:100%;
+    height:auto;
+    justify-content: space-between;
+    flex-direction:row;
+    align-items:center;
+    max-width:140rem;
+        & > small {
+            justify-content: start;
+            font-size:1.4rem;
+        }
+
+        & > .social {
+            position:relative;
+            & > a {
+                margin:auto 4.5rem;
+                & > i {
+                    color:$gry;
+                    border: .2rem solid $gry;
+                    border-radius: 50%;
+                    padding: .8rem;
+                    }
+                }
+                & > a:hover > i {
+                    color:$primary;
+                    border:.2rem solid $primary;
+                }
+            }
+    }
+}

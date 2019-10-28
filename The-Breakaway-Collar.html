@@ -5,22 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- CDN for FontAwesome5 -->
-
+    <script src="https://kit.fontawesome.com/4f187fdfca.js" crossorigin="anonymous"></script>
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato:700|Roboto&display=swap" rel="stylesheet"> 
     <!-- main stylesheet-->
     <link rel="stylesheet" type="text/css" href="./scss/main.css">
-    <title>Hydrant Solutions-The Breakaway Collar</title>
+    <title>Hydrant Solutions | The Breakaway Collar</title>
 </head>
-<body>
-    <header>
+<body id="body">
+        <nav id="nav">
+            <a id="logo" href="/"><img src="./images/logo/logo.png" width="auto" height="auto" /></a>
+            <div class="mobile__only">
+                <div class="mobile__menu__toggle">
+                    <i id="mobile__menu__toggle" class="fas fa-bars fa-2x"></i>
 
-    </header>
-    <main>
-        
+                    <div id="mobile__menu__modal" class="mobile__menu">
+                            <div id="close"><span>&#10006;</span></div>
+                            <a class="mobile__nav__links" href="./The-Breakaway-Collar.html">The Breakway Collar</a>
+                            <a class="mobile__nav__links" href="./About-Us.html">About Us</a>
+                            <a class="mobile__nav__links" href="./FAQs.html">FAQs</a>
+                            <a class="mobile__nav__links selectedd" href="./Contact-Us.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop__only">
+            <a class="nav__links selected" href="./The-Breakaway-Collar.html">The Breakway Collar</a>
+            <a class="nav__links" href="./About-Us.html">About Us</a>
+            <a class="nav__links" href="./FAQs.html">FAQs</a>
+            <a class="nav__links" href="./Contact-Us.html">Contact Us</a>
+            </div>
+        </nav>
+     <main>
+         <section id="home__image__01" class="parallax banner__image"><h1 class="banner__text white">Breakaway Collar</h1></section>
+         <section class="first__section">
+             <div class="inner__copy centered">
+                <h1>The <span class="no__br">Breakaway Collar</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A illum eaque nemo assumenda eum atque ea repellat vel, at accusamus, earum ipsum est sequi alias provident. Quia asperiores officia temporibus.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A illum eaque nemo assumenda eum atque ea repellat vel, at accusamus, earum ipsum est sequi alias provident. Quia asperiores officia temporibus.</p>
+                
+            </div>
+         </section>
+         <section id="home__image__03" class="parallax banner__image  small__banner"></section>
+         <section>
+            <div class="inner__copy centered">
+               <h1>The <span class="no__br">How It Works</span></h1>
+            </div>
+                    <div class="flex__div">          
+                        <img src="./images/process/process_01.jpg" width="auto" height="auto" alt="Installing The Breakaway Collar Step 01" />
+                        <div class="text__col">
+                        <h3>Process One</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit tenetur amet aperiam unde, accusamus, vero dolores id magnam quasi numquam consequuntur accusantium voluptates cum officiis corrupti quo. Obcaecati, modi voluptatum.</p>
+                        </div>
+                    </div>
+         </section>
+         <section class="gry__bg">
+                    <div class="flex__div flex__reverse">          
+                        <img src="./images/process/process_02.jpg" width="auto" height="auto" alt="Installing The Breakaway Collar Step 01" />
+                        <div class="text__col">
+                        <h3>Process Two</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit tenetur amet aperiam unde, accusamus, vero dolores id magnam quasi numquam consequuntur accusantium voluptates cum officiis corrupti quo. Obcaecati, modi voluptatum.</p>
+                        </div>
+                    </div>
+         </section>
+         <section>
+                    <div class="flex__div flex__div__last">          
+                        <img src="./images/process/process_03.jpg" width="auto" height="auto" alt="Installing The Breakaway Collar Step 01" />
+                        <div class="text__col">
+                        <h3>Process Three</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit tenetur amet aperiam unde, accusamus, vero dolores id magnam quasi numquam consequuntur accusantium voluptates cum officiis corrupti quo. Obcaecati, modi voluptatum.</p>
+                        </div>
+                    </div>
+        </section>
     </main>
     <footer>
-
+        <div class="flexbox footer__flexbox">
+            <small>&copy; Copyright 2015 - <span id="year"></span>, Hydrant Solutions</small>
+            <div class="social">
+                <a href="https://twitter.com/HydrantSolution" target="_blank" rel="noreferrer noopenner"><i class="fab fa-twitter fa-2x fa-border"></i></a>
+                <a href="https://www.instagram.com/hydrantsolutions/" target="_blank" rel="noreferrer noopenner"><i class="fab fa-instagram fa-2x fa-border"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 <script src="./js/main.js"></script>
