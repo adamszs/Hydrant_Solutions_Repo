@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"cd ./scss && sass --watch main.scss:main.css --no-source-map --style compressed"
+    "start": "cd ./scss && sass --watch main.scss:main.css --no-source-map --style compressed"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,6 @@
     "url": "https://github.com/adamszs/HydrantSolutions_repo/issues"
   },
   "homepage": "https://github.com/adamszs/HydrantSolutions_repo#readme",
-  "dependencies": {
-    "uglifyjs": "^2.4.11"
-  }
+  "dependencies": {},
+  "devDependencies": {}
 }
