@@ -10,6 +10,7 @@ nav {
     background-color:$white;
     overflow-x:hidden;
     z-index:1;
+    border-bottom:1px solid $gry;
   
     & #logo {
         position:absolute;
