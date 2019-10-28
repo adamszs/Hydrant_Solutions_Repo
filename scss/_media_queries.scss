@@ -119,7 +119,7 @@
     .flex__div--rev {
         flex-direction: column-reverse;
     }
-
+    #banner__logo {max-width:320px;}
 
 }
 @media (min-width: 576px) { 
@@ -234,6 +234,7 @@
         .flex__div__last {
             margin:0rem auto;
         }
+        #banner__logo {max-width:640px;}
     }
 
 // Large devices (desktops, 992px and up)
