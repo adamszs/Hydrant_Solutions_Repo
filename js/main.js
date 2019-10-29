@@ -5,6 +5,9 @@ const mobileMenu = document.getElementById('mobile__menu__modal');
 const nav = document.getElementById('nav');
 const year = document.getElementById('year');
 const body = document.getElementById('body');
+const logo = document.getElementById('logo');
+const bannerLogo = document.getElementById('banner__logo');
+
 
 //let variables
 let currentYear = new Date().getFullYear(); 
@@ -26,7 +29,7 @@ for(const section of accordionSections){
 
 //scroll events
 window.addEventListener('scroll',toggleStickyHeader);
-
+window.addEventListener('scroll',toggleLogo);
 
 //toggle mobile menu function
 function toggleMobileMenu(){
@@ -36,11 +39,21 @@ function toggleMobileMenu(){
 
 //toggle sticky header function
 function toggleStickyHeader(){
-    if(window.pageYOffset >= 500){
+    if(window.pageYOffset >= document.documentElement.clientHeight * 0.90){
         nav.classList.add('active');
     }
     else {
         nav.classList.remove('active');
+    }
+}
+//toggle logo
+function toggleLogo(){
+    if(window.pageYOffset >= document.documentElement.clientHeight * 0.10){
+        logo.classList.add('fadeIn');
+        bannerLogo.classList.add('fadeOut');
+    }else {
+        logo.classList.remove('fadeIn');
+        bannerLogo.classList.remove('fadeOut');
     }
 }
 

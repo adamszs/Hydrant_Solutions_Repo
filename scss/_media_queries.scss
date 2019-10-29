@@ -1,3 +1,5 @@
+//fixed sections
+
 // Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap
 
@@ -21,7 +23,7 @@
     .mobile__nav__links {font-size:2rem;text-align:center;font-weight:bold;}
     nav {
         padding:0 3rem 0 1.5rem;
-        top:50rem;
+        top:90vh;
     }
     nav > #logo {
         left:0;
@@ -59,8 +61,8 @@
         }
     }
     //banner images
-    .banner__image{height:50rem;}
-    .small__banner{height:35rem;}
+    .banner__image{height:90vh;}
+    .small__banner{height:70vh;}
 
     //contact social section
     .contact__social {
@@ -157,7 +159,7 @@
         padding:0 0;
         & > .sponsor {
             object-fit:contain;
-            width:auto;
+            width:30%;
             margin:auto;
         }
     }
@@ -202,9 +204,9 @@
         }
     }
     .no__br {white-space:wrap;}
-    nav {top:50rem;}
-    .banner__image {height:50rem;}
-    .small__banner{height:35rem;}
+    nav {top:90vh;}
+    .banner__image {height:90vh;}
+    .small__banner{height:70vh;}
     //background image urls go here
     .flex__col {
         justify-content: center;
@@ -243,7 +245,7 @@
         display:none;
     }
     .desktop__only {
-        display:inherit;
+        display:flex;
     }
     .body--no-scroll {
         overflow-y:visible;
