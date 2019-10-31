@@ -59,7 +59,7 @@ function toggleLogo(){
     }
 }
 function switchVideo(){
-    if(window.pageYOffset <= document.documentElement.clientHeight * .85){
+    if(window.pageYOffset <= document.documentElement.clientHeight * .99){
         video01.classList.add('z__01');
         video02.classList.remove('z__01');
     }else{
