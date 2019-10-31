@@ -7,7 +7,8 @@ const year = document.getElementById('year');
 const body = document.getElementById('body');
 const logo = document.getElementById('logo');
 const bannerLogo = document.getElementById('banner__logo');
-
+const video01 = document.getElementById('video__01');
+const video02 = document.getElementById('video__02');
 
 //let variables
 let currentYear = new Date().getFullYear(); 
@@ -30,6 +31,7 @@ for(const section of accordionSections){
 //scroll events
 window.addEventListener('scroll',toggleStickyHeader);
 window.addEventListener('scroll',toggleLogo);
+window.addEventListener('scroll',switchVideo);
 
 //toggle mobile menu function
 function toggleMobileMenu(){
@@ -39,7 +41,7 @@ function toggleMobileMenu(){
 
 //toggle sticky header function
 function toggleStickyHeader(){
-    if(window.pageYOffset >= document.documentElement.clientHeight * 0.90){
+    if(window.pageYOffset >= document.documentElement.clientHeight){
         nav.classList.add('active');
     }
     else {
@@ -48,12 +50,21 @@ function toggleStickyHeader(){
 }
 //toggle logo
 function toggleLogo(){
-    if(window.pageYOffset >= document.documentElement.clientHeight * 0.10){
+    if(window.pageYOffset >= document.documentElement.clientHeight * 0.05){
         logo.classList.add('fadeIn');
         bannerLogo.classList.add('fadeOut');
     }else {
         logo.classList.remove('fadeIn');
         bannerLogo.classList.remove('fadeOut');
+    }
+}
+function switchVideo(){
+    if(window.pageYOffset <= document.documentElement.clientHeight * .85){
+        video01.classList.add('z__01');
+        video02.classList.remove('z__01');
+    }else{
+        video01.classList.remove('z__01');
+        video02.classList.add('z__01');
     }
 }
 

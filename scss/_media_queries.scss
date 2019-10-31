@@ -23,7 +23,7 @@
     .mobile__nav__links {font-size:2rem;text-align:center;font-weight:bold;}
     nav {
         padding:0 3rem 0 1.5rem;
-        top:90%;
+        top:100vh;
     }
     nav > #logo {
         left:0;
@@ -61,7 +61,7 @@
         }
     }
     //banner images
-    .banner__image{height:90vh;}
+    .banner__image{height:100vh;}
     .small__banner{height:70vh;}
 
     //contact social section
@@ -121,7 +121,7 @@
     .flex__div--rev {
         flex-direction: column-reverse;
     }
-    #banner__logo {max-width:320px;}
+    #banner__logo {max-width:320px;position:absolute;}
 
 }
 @media (min-width: 576px) { 
@@ -204,8 +204,8 @@
         }
     }
     .no__br {white-space:wrap;}
-    nav {top:90vh;}
-    .banner__image {height:90vh;}
+    nav {top:100vh;}
+    .banner__image {height:100vh;}
     .small__banner{height:70vh;}
     //background image urls go here
     .flex__col {
