@@ -52,13 +52,13 @@ function toggleStickyHeader(){
 function toggleLogo(){
     if(window.pageYOffset >= document.documentElement.clientHeight * 0.05){
         logo.classList.add('fadeIn');
-        if(bannerLogo.length > 0){
+        if(bannerLogo !== null){
             bannerLogo.classList.add('fadeOut');
         }
     }else {
         
         logo.classList.remove('fadeIn');
-        if(bannerLogo.length > 0){
+        if(bannerLogo !== null){
         bannerLogo.classList.remove('fadeOut');
         }
     }
