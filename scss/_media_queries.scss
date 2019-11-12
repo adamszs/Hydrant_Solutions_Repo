@@ -23,7 +23,7 @@
     .mobile__nav__links {font-size:2rem;text-align:center;font-weight:bold;}
     nav {
         padding:0 3rem 0 1.5rem;
-        top:100vh;
+        top:107vh;
     }
     nav > #logo {
         left:0;
@@ -31,7 +31,7 @@
 
     //footer
     footer  {
-    padding:6rem 2rem;
+    padding:4rem 2rem;
         & > .footer__flexbox {
             flex-direction:column-reverse;
             & > small {
@@ -205,7 +205,7 @@
         }
     }
     .no__br {white-space:wrap;}
-    nav {top:100vh;}
+    nav {top:106vh;}
     .banner__image {height:100vh;}
     .small__banner{height:70vh;}
     //background image urls go here

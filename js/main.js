@@ -41,11 +41,11 @@ function toggleMobileMenu(){
 
 //toggle sticky header function
 function toggleStickyHeader(){
-    if(window.pageYOffset >= document.documentElement.clientHeight){
-        nav.classList.add('active');
+    if(window.pageYOffset >= document.documentElement.clientHeight * 1.06){
+       // nav.classList.add('active');
     }
     else {
-        nav.classList.remove('active');
+        // nav.classList.remove('active');
     }
 }
 //toggle logo

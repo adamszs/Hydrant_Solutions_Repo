@@ -10,34 +10,45 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:700|Roboto&display=swap" rel="stylesheet"> 
     <!-- main stylesheet-->
     <link rel="stylesheet" type="text/css" href="./scss/main.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82292978-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+         gtag('config', 'UA-82292978-1', { 'anonymize_ip': true });
+    </script>
+
     <title>Hydrant Solutions</title>
+    <meta name="description" content="Hydrant Solutions is a company that makes replacing damaged hydrants simple and cost effective.">
 </head>
 <body id="body">
-        <nav id="nav">
-            <a id="logo" href="/"><img src="./images/logo/logo.png" width="auto" height="auto" /></a>
-            <div class="mobile__only">
-                <div class="mobile__menu__toggle">
-                    <i id="mobile__menu__toggle" class="fas fa-bars fa-2x"></i>
+    <nav id="nav">
+        <a id="logo" title="Hydrant Solutions Logo" href="/"><img alt="Hydrant Solutions Logo" src="./images/logo/logo.png" width="auto" height="auto" /></a>
+        <div class="mobile__only">
+            <div class="mobile__menu__toggle">
+                <i id="mobile__menu__toggle" class="fas fa-bars fa-2x"></i>
 
-                    <div id="mobile__menu__modal" class="mobile__menu">
-                            <div id="close"><span>&#10006;</span></div>
-                            <a class="mobile__nav__links" href="./The-Breakaway-Collar.html">The Breakway Collar</a>
-                            <a class="mobile__nav__links" href="./About-Us.html">About Us</a>
-                            <a class="mobile__nav__links" href="./FAQs.html">FAQs</a>
-                            <a class="mobile__nav__links" href="./Contact-Us.html">Contact Us</a>
-                    </div>
+                <div id="mobile__menu__modal" class="mobile__menu">
+                        <div id="close"><span>&#10006;</span></div>
+                        <a class="mobile__nav__links" title="The Breakaway Collar" href="./The-Breakaway-Collar.html">The Breakway Collar</a>
+                        <a class="mobile__nav__links" title="About Us"  href="./About-Us.html">About Us</a>
+                        <a class="mobile__nav__links" title="Frequently Asked Questions"  href="./FAQs.html">FAQs</a>
+                        <a class="mobile__nav__links"  title="Contact Us"  href="./Contact-Us.html">Contact Us</a>
                 </div>
             </div>
-            <div class="desktop__only">
-            <a class="nav__links" href="./The-Breakaway-Collar.html">The Breakway Collar</a>
-            <a class="nav__links" href="./About-Us.html">About Us</a>
-            <a class="nav__links" href="./FAQs.html">FAQs</a>
-            <a class="nav__links" href="./Contact-Us.html">Contact Us</a>
-            </div>
-        </nav>
+        </div>
+        <div class="desktop__only">
+        <a  title="The Breakaway Collar" class="nav__links" href="./The-Breakaway-Collar.html">The Breakway Collar</a>
+        <a  title="About Us" class="nav__links" href="./About-Us.html">About Us</a>
+        <a  title="Frequently Asked Questions" class="nav__links" href="./FAQs.html">FAQs</a>
+        <a  title="Contact Us" class="nav__links" href="./Contact-Us.html">Contact Us</a>
+        </div>
+    </nav>
      <main>
          <div class="parallax banner__image"><div id="video__01" class='vimeo-wrapper z__01'><iframe src="https://player.vimeo.com/video/369707136?background=1?controls=0?autoplay=1" frameborder="0" width="640" height="360" allow="autoplay; fullscreen" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
-            <img id="banner__logo" src="./images/logo/banner__logo.png" alt="Hydrant Solutions logo with white text"/></div>
+            <img id="banner__logo" src="./images/logo/desktop__banner__logo.png" alt="Hydrant Solutions logo with white text"/></div>
          <section class="first__section ">
              <div class="inner__copy centered">
                 <h1>Why Choose <span class="no__br">Hydrant Solutions</span></h1>
@@ -61,9 +72,8 @@
                  <h3>Sponsors</h3>
             </div>
             <div class="sponsors">
-                        <img class="sponsor" src="./images/sponsors/sponsor_01.jpg" width="auto" height="auto" />
-                        <img class="sponsor" src="./images/sponsors/sponsor_02.jpg" width="auto" height="auto" />
-                        <img class="sponsor" src="./images/sponsors/sponsor_03.jpg" width="auto" height="auto" />
+                        <img class="sponsor" alt="Los Angeles Department of Water & Power logo" src="./images/sponsors/sponsor_02.jpg" width="auto" height="auto" />
+                        <img class="sponsor" alt="Los Angeles Fire Department Logo" src="./images/sponsors/sponsor_03.jpg" width="auto" height="auto" />
             </div>
         </section>
 
@@ -73,10 +83,23 @@
         <div class="flexbox footer__flexbox">
             <small>&copy; Copyright 2015 - <span id="year"></span>, Hydrant Solutions</small>
             <div class="social">
-                    <a href="https://twitter.com/HydrantSolution" target="_blank" rel="noreferrer noopenner"><i class="fab fa-twitter fa-2x fa-border"></i></a>
-                    <a href="https://www.instagram.com/hydrantsolutions/" target="_blank" rel="noreferrer noopenner"><i class="fab fa-instagram fa-2x fa-border"></i></a>
+                    <a  title="Hydrant Solutions Twitter Link" href="https://twitter.com/HydrantSolution" target="_blank" rel="noreferrer noopenner"><i class="fab fa-twitter fa-border" alt="twitter logo with circle"></i></a>
+                    <a  title="Hydrant Solutions Instagram Link" href="https://www.instagram.com/hydrantsolutions/" target="_blank" rel="noreferrer noopenner"><i class="fab fa-instagram fa-border" alt="instagram logo with circle"></i></a>
+                    <a  title="Hydrant Solutions Linkedin Link" href="https://www.linkedin.com/company/hydrantsolutions/about/" target="_blank" rel="noreferrer noopenner"><i class="fab fa-linkedin fa-border" alt="linkedin logo with circle"></i></i></a>
             </div>
         </div>
+        <script type="text/javascript">
+            WebFontConfig = {
+              google: { families: [ 'Lato:700|Roboto:400' ] }
+            };
+            (function() {
+              var wf = document.createElement('script');
+              wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+              wf.type = 'text/javascript';
+              wf.async = 'true';
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(wf, s);
+            })(); </script>
     </footer>
 </body>
 <script src="./js/main.js"></script>
