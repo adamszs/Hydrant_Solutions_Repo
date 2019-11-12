@@ -41,7 +41,7 @@ function toggleMobileMenu(){
 
 //toggle sticky header function
 function toggleStickyHeader(){
-    if(window.pageYOffset >= document.documentElement.clientHeight * 1.06){
+    if(window.pageYOffset >= document.documentElement.clientHeight){
        // nav.classList.add('active');
     }
     else {
@@ -52,10 +52,15 @@ function toggleStickyHeader(){
 function toggleLogo(){
     if(window.pageYOffset >= document.documentElement.clientHeight * 0.05){
         logo.classList.add('fadeIn');
-        bannerLogo.classList.add('fadeOut');
+        if(bannerLogo.length > 0){
+            bannerLogo.classList.add('fadeOut');
+        }
     }else {
+        
         logo.classList.remove('fadeIn');
+        if(bannerLogo.length > 0){
         bannerLogo.classList.remove('fadeOut');
+        }
     }
 }
 function switchVideo(){
