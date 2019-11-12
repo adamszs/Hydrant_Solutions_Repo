@@ -64,12 +64,12 @@ function toggleLogo(){
 }
 function switchVideo(){
     if(window.pageYOffset <= document.documentElement.clientHeight * .99){
-        if(document.getElementById("video__01") || document.getElementById("video__02")){
+        if(document.getElementById("video__01") && document.getElementById("video__02")){
             video01.classList.add('z__01');
             video02.classList.remove('z__01');
         }
     }else{
-        if(document.getElementById("video__01") || document.getElementById("video__02")){
+        if(document.getElementById("video__01") && document.getElementById("video__02")){
             video01.classList.remove('z__01');
             video02.classList.add('z__01');
         }
