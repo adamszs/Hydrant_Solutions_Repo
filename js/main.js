@@ -51,25 +51,28 @@ function toggleStickyHeader(){
 //toggle logo
 function toggleLogo(){
     if(window.pageYOffset >= document.documentElement.clientHeight * 0.05){
-        logo.classList.add('fadeIn');
+            logo.classList.add('fadeIn');
         if(bannerLogo !== null){
             bannerLogo.classList.add('fadeOut');
         }
     }else {
-        
-        logo.classList.remove('fadeIn');
+            logo.classList.remove('fadeIn');
         if(bannerLogo !== null){
-        bannerLogo.classList.remove('fadeOut');
+            bannerLogo.classList.remove('fadeOut');
         }
     }
 }
 function switchVideo(){
     if(window.pageYOffset <= document.documentElement.clientHeight * .99){
-        video01.classList.add('z__01');
-        video02.classList.remove('z__01');
+        if(video1 !== null || video2 !== null){
+            video01.classList.add('z__01');
+            video02.classList.remove('z__01');
+        }
     }else{
-        video01.classList.remove('z__01');
-        video02.classList.add('z__01');
+        if(video1 !== null || video2 !== null){
+            video01.classList.remove('z__01');
+            video02.classList.add('z__01');
+        }
     }
 }
 
