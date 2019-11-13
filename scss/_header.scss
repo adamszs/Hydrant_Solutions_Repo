@@ -12,23 +12,25 @@ nav {
     z-index:1;
     border-bottom:1px solid $gry;
   
-    & #logo {
+    & #logo,
+    & #logoWhite {
         position:absolute;
         left:3rem;
         display:flex;
         align-items:center;
         opacity:0;
-        transition:opacity 0.5s;
-        -webkit-transition:opacity 0.5s;
+        transition:opacity 0.1s;
+        -webkit-transition:opacity 0.1s;
 
         & img {
             height:40px;
         }
     }
-    & #logo.fadeIn{
+    & #logo.fadeIn,
+    & #logoWhite.fadeIn{
         opacity:1;
-        transition:opacity 1s;
-        -webkit-transition:opacity 1s;
+        transition:opacity 0.1s;
+        -webkit-transition:opacity 0.1s;
     }
     & a {
         text-decoration:none;

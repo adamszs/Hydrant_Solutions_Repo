@@ -136,9 +136,9 @@ transform: translate(-50%, -50%);
     }
     & > .accordion__section.active {   
         & > .hidden {
-            transition: opacity .25s ease-in-out;
-            -moz-transition: opacity .25s ease-in-out;
-            -webkit-transition: opacity .25s ease-in-out;
+            transition: all .25s ease-in-out;
+            -moz-transition: all .25s ease-in-out;
+            -webkit-transition: all .25s ease-in-out;
           display:block;
           opacity:1;
         }

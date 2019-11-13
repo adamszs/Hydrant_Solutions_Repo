@@ -6,6 +6,7 @@ const nav = document.getElementById('nav');
 const year = document.getElementById('year');
 const body = document.getElementById('body');
 const logo = document.getElementById('logo');
+const logoWhite = document.getElementById('logoWhite');
 const bannerLogo = document.getElementById('banner__logo');
 const video01 = document.getElementById('video__01');
 const video02 = document.getElementById('video__02');
@@ -64,6 +65,8 @@ function toggleLogo(){
 }
 function switchVideo(){
     if(window.pageYOffset <= document.documentElement.clientHeight * .99){
+        logoWhite.classList.toggle('hidden');
+        logoWhite.classList.remove('fadeIn');
         if(document.getElementById("video__01") && document.getElementById("video__02")){
             video01.classList.add('z__01');
             video02.classList.remove('z__01');
@@ -73,6 +76,9 @@ function switchVideo(){
             video01.classList.remove('z__01');
             video02.classList.add('z__01');
         }
+       logoWhite.classList.toggle('hidden');
+       logoWhite.classList.add('fadeIn');
+       logo.classList.remove('fadeIn');
     }
 }
 
