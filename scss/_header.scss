@@ -47,7 +47,17 @@ nav {
     &.active {
         position:fixed;
         top:0;
-        box-shadow: 0 4px 2px -2px $gry;
+        background-color:rgba($black,0.75);
+        border-bottom:0;
+        & > .desktop__only a {
+            color:$white;
+            &.selected {
+                color: $primary;
+            }
+        }
+        & > .mobile__only #mobile__menu__toggle {
+            color:$white;
+        }
     }
     .mobile__menu{
         display:none;

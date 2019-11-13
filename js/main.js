@@ -11,7 +11,7 @@ const video01 = document.getElementById('video__01');
 const video02 = document.getElementById('video__02');
 
 //let variables
-let currentYear = new Date().getFullYear(); 
+const currentYear = new Date().getFullYear(); 
 
 //updated text content to current year
 year.textContent += currentYear;
@@ -42,10 +42,10 @@ function toggleMobileMenu(){
 //toggle sticky header function
 function toggleStickyHeader(){
     if(window.pageYOffset >= document.documentElement.clientHeight){
-       // nav.classList.add('active');
+        nav.classList.add('active');
     }
     else {
-        // nav.classList.remove('active');
+        nav.classList.remove('active');
     }
 }
 //toggle logo
