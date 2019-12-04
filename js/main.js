@@ -10,6 +10,7 @@ const logoWhite = document.getElementById('logoWhite');
 const bannerLogo = document.getElementById('banner__logo');
 const video01 = document.getElementById('video__01');
 const video02 = document.getElementById('video__02');
+const video03 = document.getElementById('video__03');
 
 //let variables
 const currentYear = new Date().getFullYear(); 
