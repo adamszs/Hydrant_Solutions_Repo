@@ -62,9 +62,7 @@ nav {
             color:$white;
         }
     }
-    .mobile__menu{
-        display:none;
-    }
+   
     .mobile__menu__toggle .fas:hover,
     .mobile__menu.active #close:hover {
         cursor: pointer;
@@ -72,30 +70,35 @@ nav {
     .mobile__menu__toggle {
         position: absolute;
         right: 3rem;
-        top: 2rem;
-        & > .mobile__menu.active {
-            display:flex;
-            position:fixed;
-            top:0;
-            left:0;
-            z-index:99;
-            width:100%;
-            height:100%;
-            background-color:$white;
-            flex-direction:column;
-            align-items:center;
-            padding:80px 0;
-            
-            & > #close {
-                position:absolute;
-                top:1.5rem;
-                right:4.5rem;
-                font-size:3rem;
-            }
-            & > .mobile__nav__links {
-                margin: 3rem 0;
-            }
+        top: 2rem;            
+        }
+}
+.mobile__menu{
+    display:none;
+}
+.mobile__menu.active {
+    position: fixed;
+    display:block;
+    z-index:99;
+    width:100vw;
+    height:100vh;
+    background-color:$white;
+    text-align:center;
+    padding:80px 0;
+    & > #close {
+        position:absolute;
+        top:1.5rem;
+        right:4.5rem;
+        font-size:3rem;
+        &:hover {
+            cursor: pointer;
         }
     }
-
+    & > .mobile__nav__links {
+        display:flex;
+        justify-content: center;
+        flex-direction:column;
+        color:$black;
+        margin: 3rem 0;
+    }
 }
