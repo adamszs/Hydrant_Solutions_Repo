@@ -126,6 +126,7 @@
     #banner__logo {max-width:300px;position:relative;height:80px;margin-bottom:20px;}
     .no100vh {min-height:auto;}
     .first__section{margin-top:6rem;}
+    .parallax {background-attachment: scroll;}
 
 }
 @media (min-width: 576px) { 
@@ -275,4 +276,5 @@
         object-fit:cover;
     }
     .first__section{margin-top:3rem;}
+    .parallax {background-attachment: fixed;}
  }
