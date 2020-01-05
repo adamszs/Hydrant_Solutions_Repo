@@ -9,7 +9,7 @@
     #video-player, #video-player-iframe {width:100%; height:480px;}
     .mobile__only{display:inherit;}
     .desktop__only {display:none;}
-
+    
     //heading fonts 
 
     h1 { font-size:3rem;margin-bottom:2rem;margin-top:6rem;}
@@ -125,6 +125,7 @@
     }
     #banner__logo {max-width:300px;position:relative;height:80px;margin-bottom:20px;}
     .no100vh {min-height:auto;}
+    .first__section{margin-top:6rem;}
 
 }
 @media (min-width: 576px) { 
@@ -178,7 +179,7 @@
             
         }
     }
-    
+
  }
 
 // Medium devices (tablets, 768px and up)
@@ -273,4 +274,5 @@
         width:50%;
         object-fit:cover;
     }
+    .first__section{margin-top:3rem;}
  }
